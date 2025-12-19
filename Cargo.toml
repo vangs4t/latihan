@@ -1,0 +1,8 @@
+[package]
+name = "latihan"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Enables the "derive" feature of serde, and disables its default features
+latihan-pelajaran-bahasa-pemograman-rust-pzn-say-hello = { version = "0.3.0", features = ["say_hello"], default-features = false }
