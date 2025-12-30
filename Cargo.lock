@@ -3,6 +3,10 @@
 version = 4
 
 [[package]]
+name = "bye"
+version = "0.1.0"
+
+[[package]]
 name = "cfg-if"
 version = "1.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -20,8 +24,12 @@ dependencies = [
 ]
 
 [[package]]
-name = "latihan"
+name = "hello"
 version = "0.1.0"
+
+[[package]]
+name = "latihan"
+version = "0.4.0"
 dependencies = [
  "latihan-pelajaran-bahasa-pemograman-rust-pzn-say-hello",
  "uuid",

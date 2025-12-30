@@ -1,9 +1,9 @@
+workspace = { members = ["hello", "bye"] }
 [package]
 name = "latihan"
 version = "0.4.0"
 edition = "2024"
 
-workspace = {members = ["hello", "bye"]}
 [dependencies]
 # Enables the "derive" feature of serde, and disables its default features
 latihan-pelajaran-bahasa-pemograman-rust-pzn-say-hello = { version = "0.3.0", features = ["say_hello"], default-features = false }
