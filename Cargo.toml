@@ -1,11 +1,19 @@
+workspace = {members = ["hello", "bye"]}
 [package]
 name = "latihan"
-version = "0.1.0"
+version = "0.3.0"
 edition = "2024"
 
 [dependencies]
-# Enables the "derive" feature of serde, and disables its default features
-latihan-pelajaran-bahasa-pemograman-rust-pzn-say-hello = { version = "0.3.0", features = ["say_hello"], default-features = false }
+latihan-pelajaran-bahasa-pemograman-rust-pzn-say-hello = { version = "0.6.0", features = ["all"] }
+hello = { path = "hello" }
+bye = { path = "bye" }
+
+[features]
+say_hello = []
+say_goodbye = []
+all = ["say_hello", "say_goodbye"]
+default = []
 
 [dev-dependencies]
 uuid = { version = "=1.8.0", features = ["v4"] }
